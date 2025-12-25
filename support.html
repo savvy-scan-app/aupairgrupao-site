@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - AuPair Grupão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Entre em contato com o suporte do AuPair Grupão">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="text-2xl font-bold text-indigo-600">AuPair Grupão</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition">Início</a>
+                    <a href="support.html" class="text-indigo-600 font-semibold">Suporte</a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-indigo-600 transition">Privacidade</a>
+                    <a href="terms.html" class="text-gray-700 hover:text-indigo-600 transition">Termos</a>
+                    <a href="community-guidelines.html" class="text-gray-700 hover:text-indigo-600 transition">Diretrizes</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Início</a>
+                <a href="support.html" class="block py-2 text-indigo-600 font-semibold">Suporte</a>
+                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-indigo-600">Privacidade</a>
+                <a href="terms.html" class="block py-2 text-gray-700 hover:text-indigo-600">Termos</a>
+                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-indigo-600">Diretrizes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-6">Central de Suporte</h1>
+            <p class="text-lg text-gray-600 mb-8">
+                Estamos aqui para ajudar! Entre em contato conosco se você tiver dúvidas, problemas ou feedback sobre o AuPair Grupão.
+            </p>
+
+            <!-- Contact Info -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <div class="bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded-r-lg">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <svg class="w-6 h-6 text-indigo-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-gray-800">Email de Suporte</p>
+                            <a href="mailto:support@aupairgrupao.com" class="text-indigo-600 hover:text-indigo-700 font-medium">
+                                support@aupairgrupao.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-indigo-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-gray-800">Tempo de Resposta</p>
+                            <p class="text-gray-600">Respondemos em até 48 horas úteis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Perguntas Frequentes</h2>
+
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="faq-button w-full text-left p-4 flex justify-between items-center hover:bg-gray-50 transition">
+                            <span class="font-semibold text-gray-800">Como criar uma conta?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 text-gray-600">
+                            <p>Baixe o app AuPair Grupão na App Store, abra o app e clique em "Criar Conta". Você precisará fornecer um email válido e criar uma senha. Após a verificação do email, você já pode começar a usar!</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="faq-button w-full text-left p-4 flex justify-between items-center hover:bg-gray-50 transition">
+                            <span class="font-semibold text-gray-800">Como faço para reportar conteúdo inapropriado?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 text-gray-600">
+                            <p>Em qualquer post ou perfil, toque no ícone "..." (três pontos) e selecione "Reportar". Nossa equipe de moderação revisará o conteúdo em até 24 horas.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="faq-button w-full text-left p-4 flex justify-between items-center hover:bg-gray-50 transition">
+                            <span class="font-semibold text-gray-800">Como bloquear um usuário?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 text-gray-600">
+                            <p>Vá até o perfil do usuário, toque no ícone "..." e selecione "Bloquear Usuário". Usuários bloqueados não poderão ver seu perfil, posts ou enviar mensagens.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="faq-button w-full text-left p-4 flex justify-between items-center hover:bg-gray-50 transition">
+                            <span class="font-semibold text-gray-800">Como excluir minha conta?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 text-gray-600">
+                            <p>No app, vá em Configurações → Conta → "Excluir Conta". Você precisará confirmar digitando "EXCLUIR". Todos os seus dados serão permanentemente removidos. Para mais detalhes, visite nossa <a href="account-deletion.html" class="text-indigo-600 hover:underline">página de exclusão de conta</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="faq-button w-full text-left p-4 flex justify-between items-center hover:bg-gray-50 transition">
+                            <span class="font-semibold text-gray-800">Esqueci minha senha. O que faço?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 text-gray-600">
+                            <p>Na tela de login, clique em "Esqueci minha senha". Digite seu email e você receberá um link para redefinir sua senha.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="faq-button w-full text-left p-4 flex justify-between items-center hover:bg-gray-50 transition">
+                            <span class="font-semibold text-gray-800">O app é gratuito?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden p-4 pt-0 text-gray-600">
+                            <p>Sim! O AuPair Grupão é 100% gratuito. Você pode assistir a anúncios opcionais para desbloquear recompensas e recursos especiais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troubleshooting -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Problemas Técnicos</h2>
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h3 class="font-semibold text-gray-800 mb-2">O app está travando ou lento?</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mb-4">
+                        <li>Verifique se você está usando a versão mais recente do app</li>
+                        <li>Reinicie o app completamente</li>
+                        <li>Certifique-se de ter uma conexão estável com a internet</li>
+                        <li>Se o problema persistir, entre em contato conosco com detalhes do erro</li>
+                    </ul>
+
+                    <h3 class="font-semibold text-gray-800 mb-2">Não estou recebendo notificações?</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Verifique as configurações de notificação do iOS</li>
+                        <li>Vá em Ajustes → Notificações → AuPair Grupão</li>
+                        <li>Certifique-se de que "Permitir Notificações" está ativado</li>
+                        <li>No app, vá em Configurações e verifique as preferências de notificação</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Resources -->
+            <div class="border-t border-gray-200 pt-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Recursos Adicionais</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="privacy.html" class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                        <span class="font-semibold text-gray-800">Política de Privacidade</span>
+                    </a>
+                    <a href="terms.html" class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <span class="font-semibold text-gray-800">Termos de Uso</span>
+                    </a>
+                    <a href="community-guidelines.html" class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <span class="font-semibold text-gray-800">Diretrizes da Comunidade</span>
+                    </a>
+                    <a href="account-deletion.html" class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                        </svg>
+                        <span class="font-semibold text-gray-800">Como Excluir Conta</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center text-gray-600">
+                <p class="mb-2">&copy; 2025 AuPair Grupão. Todos os direitos reservados.</p>
+                <div class="flex justify-center space-x-4 text-sm">
+                    <a href="privacy.html" class="hover:text-indigo-600">Privacidade</a>
+                    <span>•</span>
+                    <a href="terms.html" class="hover:text-indigo-600">Termos</a>
+                    <span>•</span>
+                    <a href="support.html" class="hover:text-indigo-600">Suporte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        const faqButtons = document.querySelectorAll('.faq-button');
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('svg');
+
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
