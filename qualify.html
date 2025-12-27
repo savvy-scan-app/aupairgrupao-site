@@ -141,18 +141,56 @@
                     </div>
                 </div>
 
-                <!-- Question 4: WhatsApp -->
+                <!-- Question 4: First Name -->
                 <div class="space-y-3">
-                    <label class="block text-lg font-semibold text-gray-800">4. Seu WhatsApp</label>
+                    <label class="block text-lg font-semibold text-gray-800">4. Seu primeiro nome</label>
                     <input
-                        type="tel"
-                        name="whatsapp"
-                        id="whatsapp"
-                        placeholder="+55 11 99999-9999"
+                        type="text"
+                        name="first_name"
+                        id="first_name"
+                        placeholder="Ex: Maria"
                         class="w-full p-4 border border-gray-200 rounded-2xl focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition text-gray-700"
                         required
                     >
-                    <p class="text-sm text-gray-500">Usaremos apenas para entrar em contato sobre o app.</p>
+                </div>
+
+                <!-- Question 5: WhatsApp -->
+                <div class="space-y-3">
+                    <label class="block text-lg font-semibold text-gray-800">5. Seu WhatsApp</label>
+                    <div class="flex gap-2">
+                        <select
+                            id="country-code"
+                            class="p-4 border border-gray-200 rounded-2xl focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition text-gray-700 bg-white"
+                        >
+                            <option value="+55">🇧🇷 +55</option>
+                            <option value="+1">🇺🇸 +1</option>
+                        </select>
+                        <input
+                            type="tel"
+                            name="whatsapp"
+                            id="whatsapp"
+                            placeholder="11 99999-9999"
+                            class="flex-1 p-4 border border-gray-200 rounded-2xl focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition text-gray-700"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <!-- Consent Checkbox -->
+                <div class="space-y-3">
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="consent"
+                            id="consent"
+                            class="w-5 h-5 mt-0.5 text-primary focus:ring-primary rounded border-gray-300"
+                            required
+                        >
+                        <span class="text-sm text-gray-600">
+                            Concordo em receber comunicações do AuPair Grupão pelo WhatsApp sobre o app e novidades.
+                            Seus dados serão tratados conforme nossa <a href="privacy.html" target="_blank" class="text-primary hover:underline">Política de Privacidade</a>.
+                        </span>
+                    </label>
                 </div>
 
                 <!-- Submit Button -->
@@ -161,77 +199,16 @@
                     id="submit-btn"
                     class="w-full bg-primary text-white py-4 rounded-2xl font-semibold hover:bg-primary/90 transition shadow-soft text-lg"
                 >
-                    Verificar Qualificação
+                    Avançar
                 </button>
             </form>
-        </div>
-
-        <!-- Success Section (hidden by default) -->
-        <div id="success-section" class="hidden">
-            <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100 text-center">
-                <div class="w-20 h-20 bg-success rounded-full flex items-center justify-center mb-6 mx-auto shadow-soft">
-                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                </div>
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Parabéns!</h2>
-                <p class="text-gray-600 text-lg mb-8">Você qualifica para o grupo beta! Clique no botão abaixo para entrar no nosso grupo exclusivo do WhatsApp.</p>
-                <a
-                    href="https://chat.whatsapp.com/PLACEHOLDER"
-                    target="_blank"
-                    class="inline-block bg-success text-white px-8 py-4 rounded-2xl font-semibold hover:bg-success/90 transition shadow-soft text-lg"
-                >
-                    Entrar no Grupo do WhatsApp
-                </a>
-                <p class="mt-6 text-gray-500 text-sm">Você será redirecionado para o WhatsApp</p>
-            </div>
-        </div>
-
-        <!-- Rejection Section (hidden by default) -->
-        <div id="rejection-section" class="hidden">
-            <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100 text-center">
-                <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto shadow-soft">
-                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                </div>
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Obrigada pelo interesse!</h2>
-                <p class="text-gray-600 text-lg mb-4">No momento, o acesso antecipado está disponível apenas para:</p>
-                <ul class="text-gray-600 mb-8 space-y-2">
-                    <li class="flex items-center justify-center">
-                        <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Au Pairs atuais
-                    </li>
-                    <li class="flex items-center justify-center">
-                        <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Usuárias de iOS (iPhone/iPad)
-                    </li>
-                    <li class="flex items-center justify-center">
-                        <svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        Com experiência de 3 meses a 2 anos
-                    </li>
-                </ul>
-                <p class="text-gray-600 mb-8">Guardamos seu contato e entraremos em contato quando houver vagas disponíveis para o seu perfil!</p>
-                <a
-                    href="index.html"
-                    class="inline-block bg-primary text-white px-8 py-4 rounded-2xl font-semibold hover:bg-primary/90 transition shadow-soft text-lg"
-                >
-                    Voltar ao Início
-                </a>
-            </div>
         </div>
 
         <!-- Loading Section (hidden by default) -->
         <div id="loading-section" class="hidden">
             <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100 text-center">
                 <div class="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-6"></div>
-                <p class="text-gray-600 text-lg">Verificando qualificação...</p>
+                <p class="text-gray-600 text-lg">Processando...</p>
             </div>
         </div>
 
@@ -272,26 +249,48 @@
         // Form elements
         const form = document.getElementById('qualification-form');
         const formSection = document.getElementById('form-section');
-        const successSection = document.getElementById('success-section');
-        const rejectionSection = document.getElementById('rejection-section');
         const loadingSection = document.getElementById('loading-section');
 
         // Phone mask for WhatsApp field
         const whatsappInput = document.getElementById('whatsapp');
-        whatsappInput.addEventListener('input', (e) => {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length > 0) {
-                if (value.length <= 2) {
-                    value = '+' + value;
-                } else if (value.length <= 4) {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2);
-                } else if (value.length <= 9) {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 4) + ' ' + value.slice(4);
+        const countryCodeSelect = document.getElementById('country-code');
+
+        function formatPhoneNumber(value, countryCode) {
+            const digits = value.replace(/\D/g, '');
+
+            if (countryCode === '+55') {
+                // Brazilian format: XX XXXXX-XXXX
+                if (digits.length <= 2) {
+                    return digits;
+                } else if (digits.length <= 7) {
+                    return digits.slice(0, 2) + ' ' + digits.slice(2);
                 } else {
-                    value = '+' + value.slice(0, 2) + ' ' + value.slice(2, 4) + ' ' + value.slice(4, 9) + '-' + value.slice(9, 13);
+                    return digits.slice(0, 2) + ' ' + digits.slice(2, 7) + '-' + digits.slice(7, 11);
+                }
+            } else {
+                // US format: XXX XXX-XXXX
+                if (digits.length <= 3) {
+                    return digits;
+                } else if (digits.length <= 6) {
+                    return digits.slice(0, 3) + ' ' + digits.slice(3);
+                } else {
+                    return digits.slice(0, 3) + ' ' + digits.slice(3, 6) + '-' + digits.slice(6, 10);
                 }
             }
-            e.target.value = value;
+        }
+
+        function updatePlaceholder() {
+            const countryCode = countryCodeSelect.value;
+            whatsappInput.placeholder = countryCode === '+55' ? '11 99999-9999' : '555 123-4567';
+        }
+
+        whatsappInput.addEventListener('input', (e) => {
+            e.target.value = formatPhoneNumber(e.target.value, countryCodeSelect.value);
+        });
+
+        countryCodeSelect.addEventListener('change', () => {
+            updatePlaceholder();
+            whatsappInput.value = formatPhoneNumber(whatsappInput.value, countryCodeSelect.value);
         });
 
         // Check if user qualifies
@@ -308,10 +307,13 @@
             e.preventDefault();
 
             const formData = new FormData(form);
+            const firstName = formData.get('first_name');
             const status = formData.get('status');
             const device = formData.get('device');
             const timeAsAupair = formData.get('time_as_aupair');
-            const whatsapp = formData.get('whatsapp');
+            const countryCode = countryCodeSelect.value;
+            const phoneNumber = formData.get('whatsapp');
+            const whatsapp = countryCode + ' ' + phoneNumber;
 
             const qualified = checkQualification(status, device, timeAsAupair);
 
@@ -324,6 +326,7 @@
                 const { error } = await supabaseClient
                     .from('website_leads')
                     .insert([{
+                        first_name: firstName,
                         whatsapp: whatsapp,
                         status: status,
                         device: device,
@@ -338,14 +341,12 @@
                 console.error('Error:', err);
             }
 
-            // Simulate a small delay for UX
+            // Redirect to appropriate page
             setTimeout(() => {
-                loadingSection.classList.add('hidden');
-
                 if (qualified) {
-                    successSection.classList.remove('hidden');
+                    window.location.href = 'qualify-success.html';
                 } else {
-                    rejectionSection.classList.remove('hidden');
+                    window.location.href = 'qualify-thanks.html';
                 }
             }, 1000);
         });
