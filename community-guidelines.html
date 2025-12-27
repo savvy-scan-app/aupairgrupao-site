@@ -5,22 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diretrizes da Comunidade - AuPair Grupão</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F06179',
+                        secondary: '#4A9CE8',
+                        accent: '#30BFB2',
+                        error: '#E13D45',
+                        success: '#21A666',
+                        subtle: '#F5EBE1',
+                    },
+                    borderRadius: {
+                        'xl': '14px',
+                        '2xl': '20px',
+                        '3xl': '28px',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 14px rgba(0, 0, 0, 0.08)',
+                        'soft-lg': '0 8px 24px rgba(0, 0, 0, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
     <meta name="description" content="Diretrizes da Comunidade do AuPair Grupão">
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+<body class="bg-gradient-to-br from-primary/10 to-secondary/10 min-h-screen">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-soft">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-2">
-                    <a href="index.html" class="text-2xl font-bold text-indigo-600">AuPair Grupão</a>
+                    <a href="index.html" class="text-2xl font-bold text-primary">AuPair Grupão</a>
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition">Início</a>
-                    <a href="support.html" class="text-gray-700 hover:text-indigo-600 transition">Suporte</a>
-                    <a href="privacy.html" class="text-gray-700 hover:text-indigo-600 transition">Privacidade</a>
-                    <a href="terms.html" class="text-gray-700 hover:text-indigo-600 transition">Termos</a>
-                    <a href="community-guidelines.html" class="text-indigo-600 font-semibold">Diretrizes</a>
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+                    <a href="support.html" class="text-gray-700 hover:text-primary transition">Suporte</a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-primary transition">Privacidade</a>
+                    <a href="terms.html" class="text-gray-700 hover:text-primary transition">Termos</a>
+                    <a href="community-guidelines.html" class="text-primary font-semibold">Diretrizes</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
@@ -33,25 +58,33 @@
             </div>
             <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Início</a>
-                <a href="support.html" class="block py-2 text-gray-700 hover:text-indigo-600">Suporte</a>
-                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-indigo-600">Privacidade</a>
-                <a href="terms.html" class="block py-2 text-gray-700 hover:text-indigo-600">Termos</a>
-                <a href="community-guidelines.html" class="block py-2 text-indigo-600 font-semibold">Diretrizes</a>
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Início</a>
+                <a href="support.html" class="block py-2 text-gray-700 hover:text-primary">Suporte</a>
+                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-primary">Privacidade</a>
+                <a href="terms.html" class="block py-2 text-gray-700 hover:text-primary">Termos</a>
+                <a href="community-guidelines.html" class="block py-2 text-primary font-semibold">Diretrizes</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <div class="max-w-4xl mx-auto px-4 py-12">
-        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Diretrizes da Comunidade</h1>
-            <p class="text-gray-600 mb-8">Última atualização: 16 de dezembro de 2025</p>
+        <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100">
+            <!-- Hero Icon -->
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Diretrizes da Comunidade</h1>
+                <p class="text-gray-600">Última atualização: 16 de dezembro de 2025</p>
+            </div>
 
             <div class="prose max-w-none">
                 <!-- Introduction -->
                 <section class="mb-8">
-                    <div class="bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded-r-lg mb-6">
+                    <div class="bg-primary/10 border-l-4 border-primary p-6 rounded-2xl mb-6">
                         <h2 class="text-xl font-bold text-gray-800 mb-3">Nossa Missão</h2>
                         <p class="text-gray-700 leading-relaxed">
                             O <strong>AuPair Grupão</strong> é uma comunidade construída em respeito, empatia e apoio mútuo. Queremos que todas as Au Pairs se sintam seguras, acolhidas e empoderadas para compartilhar suas experiências.
@@ -69,8 +102,8 @@
                 <section class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Seja Respeitosa e Empática</h2>
                     <p class="text-gray-700 mb-3">Tratamos todas as pessoas com dignidade e respeito:</p>
-                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg mb-4">
-                        <p class="text-gray-800 font-semibold mb-2">✅ Permitido:</p>
+                    <div class="bg-success/10 border-l-4 border-success p-4 rounded-2xl mb-4">
+                        <p class="text-gray-800 font-semibold mb-2">Permitido:</p>
                         <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
                             <li>Compartilhar experiências pessoais e oferecer apoio</li>
                             <li>Discordar respeitosamente e ter debates construtivos</li>
@@ -78,8 +111,8 @@
                             <li>Celebrar conquistas e marcos importantes</li>
                         </ul>
                     </div>
-                    <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
-                        <p class="text-gray-800 font-semibold mb-2">❌ Proibido:</p>
+                    <div class="bg-error/10 border-l-4 border-error p-4 rounded-2xl">
+                        <p class="text-gray-800 font-semibold mb-2">Proibido:</p>
                         <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
                             <li>Assédio, bullying ou intimidação de qualquer tipo</li>
                             <li>Ataques pessoais, xingamentos ou linguagem ofensiva</li>
@@ -105,7 +138,7 @@
                         <li><strong>Idade:</strong> Discriminação baseada em idade</li>
                         <li><strong>Status Social ou Econômico:</strong> Classismo, elitismo</li>
                     </ul>
-                    <p class="text-gray-700 text-sm italic bg-yellow-50 p-3 rounded">
+                    <p class="text-gray-700 text-sm italic bg-amber-50 p-3 rounded-xl">
                         Violações de discurso de ódio resultam em banimento imediato e permanente sem aviso prévio.
                     </p>
                 </section>
@@ -163,8 +196,8 @@
                         <li><strong>Bots e Automação:</strong> Contas automatizadas, bots de spam</li>
                         <li><strong>Clickbait Enganoso:</strong> Títulos sensacionalistas que não correspondem ao conteúdo</li>
                     </ul>
-                    <p class="text-gray-700 mt-4 bg-yellow-50 p-3 rounded text-sm">
-                        <strong>⚠️ Dica de Segurança:</strong> Nunca envie dinheiro para pessoas que você conheceu apenas online. Desconfie de histórias urgentes pedindo ajuda financeira.
+                    <p class="text-gray-700 mt-4 bg-amber-50 p-3 rounded-xl text-sm">
+                        <strong>Dica de Segurança:</strong> Nunca envie dinheiro para pessoas que você conheceu apenas online. Desconfie de histórias urgentes pedindo ajuda financeira.
                     </p>
                 </section>
 
@@ -213,8 +246,8 @@
                         <li><strong>Tragédias e Traumas:</strong> Seja compassiva ao discutir tópicos difíceis</li>
                         <li><strong>Saúde Mental e Suicídio:</strong> Ofereça apoio, não julgamento. Use recursos profissionais quando apropriado</li>
                     </ul>
-                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mt-4">
-                        <p class="text-gray-800 font-semibold mb-2">🆘 Recursos de Emergência</p>
+                    <div class="bg-secondary/10 border-l-4 border-secondary p-4 rounded-2xl mt-4">
+                        <p class="text-gray-800 font-semibold mb-2">Recursos de Emergência</p>
                         <p class="text-gray-700 text-sm">Se você está em crise: 988 Suicide & Crisis Lifeline (EUA), Texto "HELLO" para 741741 (Crisis Text Line)</p>
                     </div>
                 </section>
@@ -254,23 +287,23 @@
                     </p>
 
                     <div class="space-y-4">
-                        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r-lg">
-                            <p class="font-semibold text-gray-800 mb-1">⚠️ Aviso</p>
+                        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-2xl">
+                            <p class="font-semibold text-gray-800 mb-1">Aviso</p>
                             <p class="text-gray-700 text-sm">Para violações menores ou primeira ofensa. Você receberá notificação explicando a violação.</p>
                         </div>
 
-                        <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded-r-lg">
-                            <p class="font-semibold text-gray-800 mb-1">🗑️ Remoção de Conteúdo</p>
+                        <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded-2xl">
+                            <p class="font-semibold text-gray-800 mb-1">Remoção de Conteúdo</p>
                             <p class="text-gray-700 text-sm">Conteúdo que viola diretrizes será removido, com ou sem aviso.</p>
                         </div>
 
-                        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
-                            <p class="font-semibold text-gray-800 mb-1">⏸️ Suspensão Temporária</p>
+                        <div class="bg-error/10 border-l-4 border-error p-4 rounded-2xl">
+                            <p class="font-semibold text-gray-800 mb-1">Suspensão Temporária</p>
                             <p class="text-gray-700 text-sm">Para violações repetidas ou moderadas. Duração: 3-30 dias dependendo da gravidade.</p>
                         </div>
 
-                        <div class="bg-gray-900 border-l-4 border-gray-900 p-4 rounded-r-lg">
-                            <p class="font-semibold text-white mb-1">🚫 Banimento Permanente</p>
+                        <div class="bg-gray-900 border-l-4 border-gray-900 p-4 rounded-2xl">
+                            <p class="font-semibold text-white mb-1">Banimento Permanente</p>
                             <p class="text-gray-200 text-sm">Para violações graves (discurso de ódio, assédio severo, atividades ilegais) ou violações repetidas após avisos.</p>
                         </div>
                     </div>
@@ -287,7 +320,7 @@
                         Se você acredita que uma ação de moderação foi injusta, pode contestar:
                     </p>
                     <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                        <li>Envie um email para <a href="mailto:support@aupairgrupao.com" class="text-indigo-600 hover:underline font-medium">support@aupairgrupao.com</a> com o assunto "Apelação de Moderação"</li>
+                        <li>Envie um email para <a href="mailto:support@aupairgrupao.com" class="text-primary hover:underline font-medium">support@aupairgrupao.com</a> com o assunto "Apelação de Moderação"</li>
                         <li>Inclua detalhes: seu username, o conteúdo/ação em questão, e por que você acredita que foi injusta</li>
                         <li>Nossa equipe revisará e responderá dentro de 5-7 dias úteis</li>
                         <li>Decisões de banimento por discurso de ódio ou assédio severo são geralmente finais</li>
@@ -295,13 +328,13 @@
                 </section>
 
                 <!-- Final Note -->
-                <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-6 mt-8">
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">💙 Construindo uma Comunidade Melhor Juntas</h3>
+                <div class="bg-primary/10 border border-primary/20 rounded-2xl p-6 mt-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Construindo uma Comunidade Melhor Juntas</h3>
                     <p class="text-gray-700 leading-relaxed mb-3">
                         Estas diretrizes existem para proteger todas nós e criar um espaço onde Au Pairs possam se conectar autenticamente, compartilhar experiências e crescer juntas.
                     </p>
                     <p class="text-gray-700 leading-relaxed">
-                        Obrigada por fazer parte do AuPair Grupão e por ajudar a tornar nossa comunidade um lugar acolhedor e seguro para todas! ✨
+                        Obrigada por fazer parte do AuPair Grupão e por ajudar a tornar nossa comunidade um lugar acolhedor e seguro para todas!
                     </p>
                 </div>
 
@@ -311,10 +344,10 @@
                     <p class="text-gray-700 mb-3">
                         Dúvidas sobre estas diretrizes? Entre em contato:
                     </p>
-                    <div class="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-r-lg">
+                    <div class="bg-gray-100 border-l-4 border-gray-400 p-4 rounded-2xl">
                         <p class="text-gray-800 font-semibold">AuPair Grupão - Segurança da Comunidade</p>
-                        <p class="text-gray-700">Email: <a href="mailto:support@aupairgrupao.com" class="text-indigo-600 hover:underline font-medium">support@aupairgrupao.com</a></p>
-                        <p class="text-gray-700">Suporte: <a href="support.html" class="text-indigo-600 hover:underline font-medium">aupairgrupao.com/support</a></p>
+                        <p class="text-gray-700">Email: <a href="mailto:support@aupairgrupao.com" class="text-primary hover:underline font-medium">support@aupairgrupao.com</a></p>
+                        <p class="text-gray-700">Suporte: <a href="support.html" class="text-primary hover:underline font-medium">aupairgrupao.com/support</a></p>
                     </div>
                 </section>
 
@@ -322,13 +355,13 @@
                 <div class="border-t border-gray-200 pt-6 mt-8">
                     <h3 class="font-semibold text-gray-800 mb-3">Documentos Relacionados</h3>
                     <div class="flex flex-wrap gap-3">
-                        <a href="terms.html" class="text-indigo-600 hover:underline">Termos de Uso</a>
+                        <a href="terms.html" class="text-primary hover:underline">Termos de Uso</a>
                         <span class="text-gray-400">•</span>
-                        <a href="privacy.html" class="text-indigo-600 hover:underline">Política de Privacidade</a>
+                        <a href="privacy.html" class="text-primary hover:underline">Política de Privacidade</a>
                         <span class="text-gray-400">•</span>
-                        <a href="account-deletion.html" class="text-indigo-600 hover:underline">Exclusão de Conta</a>
+                        <a href="account-deletion.html" class="text-primary hover:underline">Exclusão de Conta</a>
                         <span class="text-gray-400">•</span>
-                        <a href="support.html" class="text-indigo-600 hover:underline">Suporte</a>
+                        <a href="support.html" class="text-primary hover:underline">Suporte</a>
                     </div>
                 </div>
             </div>
@@ -336,16 +369,16 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white mt-16">
+    <footer class="bg-white mt-16 border-t border-gray-100">
         <div class="max-w-6xl mx-auto px-4 py-8">
             <div class="text-center text-gray-600">
                 <p class="mb-2">&copy; 2025 AuPair Grupão. Todos os direitos reservados.</p>
                 <div class="flex justify-center space-x-4 text-sm">
-                    <a href="privacy.html" class="hover:text-indigo-600">Privacidade</a>
+                    <a href="privacy.html" class="hover:text-primary transition">Privacidade</a>
                     <span>•</span>
-                    <a href="terms.html" class="hover:text-indigo-600">Termos</a>
+                    <a href="terms.html" class="hover:text-primary transition">Termos</a>
                     <span>•</span>
-                    <a href="support.html" class="hover:text-indigo-600">Suporte</a>
+                    <a href="support.html" class="hover:text-primary transition">Suporte</a>
                 </div>
             </div>
         </div>

@@ -5,22 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termos de Uso - AuPair Grupão</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F06179',
+                        secondary: '#4A9CE8',
+                        accent: '#30BFB2',
+                        error: '#E13D45',
+                        success: '#21A666',
+                        subtle: '#F5EBE1',
+                    },
+                    borderRadius: {
+                        'xl': '14px',
+                        '2xl': '20px',
+                        '3xl': '28px',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 14px rgba(0, 0, 0, 0.08)',
+                        'soft-lg': '0 8px 24px rgba(0, 0, 0, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
     <meta name="description" content="Termos de Uso do AuPair Grupão">
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+<body class="bg-gradient-to-br from-primary/10 to-secondary/10 min-h-screen">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-soft">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-2">
-                    <a href="index.html" class="text-2xl font-bold text-indigo-600">AuPair Grupão</a>
+                    <a href="index.html" class="text-2xl font-bold text-primary">AuPair Grupão</a>
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition">Início</a>
-                    <a href="support.html" class="text-gray-700 hover:text-indigo-600 transition">Suporte</a>
-                    <a href="privacy.html" class="text-gray-700 hover:text-indigo-600 transition">Privacidade</a>
-                    <a href="terms.html" class="text-indigo-600 font-semibold">Termos</a>
-                    <a href="community-guidelines.html" class="text-gray-700 hover:text-indigo-600 transition">Diretrizes</a>
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+                    <a href="support.html" class="text-gray-700 hover:text-primary transition">Suporte</a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-primary transition">Privacidade</a>
+                    <a href="terms.html" class="text-primary font-semibold">Termos</a>
+                    <a href="community-guidelines.html" class="text-gray-700 hover:text-primary transition">Diretrizes</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
@@ -33,20 +58,28 @@
             </div>
             <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Início</a>
-                <a href="support.html" class="block py-2 text-gray-700 hover:text-indigo-600">Suporte</a>
-                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-indigo-600">Privacidade</a>
-                <a href="terms.html" class="block py-2 text-indigo-600 font-semibold">Termos</a>
-                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-indigo-600">Diretrizes</a>
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Início</a>
+                <a href="support.html" class="block py-2 text-gray-700 hover:text-primary">Suporte</a>
+                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-primary">Privacidade</a>
+                <a href="terms.html" class="block py-2 text-primary font-semibold">Termos</a>
+                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-primary">Diretrizes</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <div class="max-w-4xl mx-auto px-4 py-12">
-        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Termos de Uso</h1>
-            <p class="text-gray-600 mb-8">Última atualização: 16 de dezembro de 2025</p>
+        <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100">
+            <!-- Hero Icon -->
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Termos de Uso</h1>
+                <p class="text-gray-600">Última atualização: 16 de dezembro de 2025</p>
+            </div>
 
             <div class="prose max-w-none">
                 <!-- Introduction -->
@@ -57,7 +90,7 @@
                     <p class="text-gray-700 leading-relaxed mb-4">
                         Ao criar uma conta ou usar o AuPair Grupão, você concorda em cumprir estes Termos. Se você não concorda com estes Termos, não use o Serviço.
                     </p>
-                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r-lg my-4">
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-2xl my-4">
                         <p class="text-gray-800 font-semibold mb-2">Importante:</p>
                         <p class="text-gray-700">Você deve ter pelo menos <strong>18 anos</strong> para usar o AuPair Grupão.</p>
                     </div>
@@ -67,7 +100,7 @@
                 <section class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Aceitação dos Termos</h2>
                     <p class="text-gray-700 mb-3">
-                        Ao acessar ou usar o AuPair Grupão, você concorda em estar vinculado a estes Termos de Uso, nossa <a href="privacy.html" class="text-indigo-600 hover:underline font-medium">Política de Privacidade</a>, e nossas <a href="community-guidelines.html" class="text-indigo-600 hover:underline font-medium">Diretrizes da Comunidade</a>.
+                        Ao acessar ou usar o AuPair Grupão, você concorda em estar vinculado a estes Termos de Uso, nossa <a href="privacy.html" class="text-primary hover:underline font-medium">Política de Privacidade</a>, e nossas <a href="community-guidelines.html" class="text-primary hover:underline font-medium">Diretrizes da Comunidade</a>.
                     </p>
                     <p class="text-gray-700">
                         Reservamo-nos o direito de modificar estes Termos a qualquer momento. Notificaremos você sobre mudanças significativas através do app ou por email. O uso continuado do Serviço após as alterações constitui sua aceitação dos novos Termos.
@@ -102,7 +135,7 @@
                     <p class="text-gray-700 mb-4">Você não pode criar múltiplas contas, exceto com nossa permissão expressa por escrito. Contas duplicadas serão removidas.</p>
 
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">3.3 Encerramento de Conta</h3>
-                    <p class="text-gray-700">Você pode excluir sua conta a qualquer momento através das configurações do app. Consulte nossa <a href="account-deletion.html" class="text-indigo-600 hover:underline font-medium">página de exclusão de conta</a> para mais detalhes.</p>
+                    <p class="text-gray-700">Você pode excluir sua conta a qualquer momento através das configurações do app. Consulte nossa <a href="account-deletion.html" class="text-primary hover:underline font-medium">página de exclusão de conta</a> para mais detalhes.</p>
                 </section>
 
                 <!-- Section 4: User Conduct -->
@@ -110,7 +143,7 @@
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">4. Conduta do Usuário e Comportamentos Proibidos</h2>
                     <p class="text-gray-700 mb-3">Ao usar o AuPair Grupão, você concorda em <strong>NÃO</strong>:</p>
                     <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                        <li>Violar nossas <a href="community-guidelines.html" class="text-indigo-600 hover:underline font-medium">Diretrizes da Comunidade</a></li>
+                        <li>Violar nossas <a href="community-guidelines.html" class="text-primary hover:underline font-medium">Diretrizes da Comunidade</a></li>
                         <li>Assediar, ameaçar, intimidar ou incitar violência contra qualquer pessoa</li>
                         <li>Postar conteúdo difamatório, obsceno, pornográfico, fraudulento ou ilegal</li>
                         <li>Promover discurso de ódio, discriminação ou intolerância com base em raça, etnia, nacionalidade, religião, sexo, orientação sexual, deficiência ou qualquer outra característica protegida</li>
@@ -198,7 +231,7 @@
                 <section class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Isenções de Responsabilidade</h2>
 
-                    <div class="bg-gray-50 border border-gray-300 rounded-lg p-6 my-4">
+                    <div class="bg-gray-100 border border-gray-300 rounded-2xl p-6 my-4">
                         <p class="text-gray-700 mb-3 uppercase font-semibold">O serviço é fornecido "como está" e "conforme disponível".</p>
                         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
                             <li>Não garantimos que o Serviço seja ininterrupto, seguro ou livre de erros</li>
@@ -281,10 +314,10 @@
                     <p class="text-gray-700 mb-3">
                         Se você tiver dúvidas sobre estes Termos de Uso, entre em contato conosco:
                     </p>
-                    <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4 rounded-r-lg">
+                    <div class="bg-secondary/10 border-l-4 border-secondary p-4 rounded-2xl">
                         <p class="text-gray-800 font-semibold">AuPair Grupão</p>
-                        <p class="text-gray-700">Email: <a href="mailto:support@aupairgrupao.com" class="text-indigo-600 hover:underline font-medium">support@aupairgrupao.com</a></p>
-                        <p class="text-gray-700">Suporte: <a href="support.html" class="text-indigo-600 hover:underline font-medium">aupairgrupao.com/support</a></p>
+                        <p class="text-gray-700">Email: <a href="mailto:support@aupairgrupao.com" class="text-primary hover:underline font-medium">support@aupairgrupao.com</a></p>
+                        <p class="text-gray-700">Suporte: <a href="support.html" class="text-primary hover:underline font-medium">aupairgrupao.com/support</a></p>
                     </div>
                 </section>
 
@@ -292,13 +325,13 @@
                 <div class="border-t border-gray-200 pt-6 mt-8">
                     <h3 class="font-semibold text-gray-800 mb-3">Documentos Relacionados</h3>
                     <div class="flex flex-wrap gap-3">
-                        <a href="privacy.html" class="text-indigo-600 hover:underline">Política de Privacidade</a>
+                        <a href="privacy.html" class="text-primary hover:underline">Política de Privacidade</a>
                         <span class="text-gray-400">•</span>
-                        <a href="community-guidelines.html" class="text-indigo-600 hover:underline">Diretrizes da Comunidade</a>
+                        <a href="community-guidelines.html" class="text-primary hover:underline">Diretrizes da Comunidade</a>
                         <span class="text-gray-400">•</span>
-                        <a href="account-deletion.html" class="text-indigo-600 hover:underline">Exclusão de Conta</a>
+                        <a href="account-deletion.html" class="text-primary hover:underline">Exclusão de Conta</a>
                         <span class="text-gray-400">•</span>
-                        <a href="support.html" class="text-indigo-600 hover:underline">Suporte</a>
+                        <a href="support.html" class="text-primary hover:underline">Suporte</a>
                     </div>
                 </div>
             </div>
@@ -306,16 +339,16 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white mt-16">
+    <footer class="bg-white mt-16 border-t border-gray-100">
         <div class="max-w-6xl mx-auto px-4 py-8">
             <div class="text-center text-gray-600">
                 <p class="mb-2">&copy; 2025 AuPair Grupão. Todos os direitos reservados.</p>
                 <div class="flex justify-center space-x-4 text-sm">
-                    <a href="privacy.html" class="hover:text-indigo-600">Privacidade</a>
+                    <a href="privacy.html" class="hover:text-primary transition">Privacidade</a>
                     <span>•</span>
-                    <a href="terms.html" class="hover:text-indigo-600">Termos</a>
+                    <a href="terms.html" class="hover:text-primary transition">Termos</a>
                     <span>•</span>
-                    <a href="support.html" class="hover:text-indigo-600">Suporte</a>
+                    <a href="support.html" class="hover:text-primary transition">Suporte</a>
                 </div>
             </div>
         </div>

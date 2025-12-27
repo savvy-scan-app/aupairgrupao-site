@@ -5,22 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - AuPair Grupão</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F06179',
+                        secondary: '#4A9CE8',
+                        accent: '#30BFB2',
+                        error: '#E13D45',
+                        success: '#21A666',
+                        subtle: '#F5EBE1',
+                    },
+                    borderRadius: {
+                        'xl': '14px',
+                        '2xl': '20px',
+                        '3xl': '28px',
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 14px rgba(0, 0, 0, 0.08)',
+                        'soft-lg': '0 8px 24px rgba(0, 0, 0, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
     <meta name="description" content="Política de Privacidade do AuPair Grupão">
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+<body class="bg-gradient-to-br from-primary/10 to-secondary/10 min-h-screen">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-soft">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-2">
-                    <a href="index.html" class="text-2xl font-bold text-indigo-600">AuPair Grupão</a>
+                    <a href="index.html" class="text-2xl font-bold text-primary">AuPair Grupão</a>
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition">Início</a>
-                    <a href="support.html" class="text-gray-700 hover:text-indigo-600 transition">Suporte</a>
-                    <a href="privacy.html" class="text-indigo-600 font-semibold">Privacidade</a>
-                    <a href="terms.html" class="text-gray-700 hover:text-indigo-600 transition">Termos</a>
-                    <a href="community-guidelines.html" class="text-gray-700 hover:text-indigo-600 transition">Diretrizes</a>
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+                    <a href="support.html" class="text-gray-700 hover:text-primary transition">Suporte</a>
+                    <a href="privacy.html" class="text-primary font-semibold">Privacidade</a>
+                    <a href="terms.html" class="text-gray-700 hover:text-primary transition">Termos</a>
+                    <a href="community-guidelines.html" class="text-gray-700 hover:text-primary transition">Diretrizes</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
@@ -33,20 +58,28 @@
             </div>
             <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Início</a>
-                <a href="support.html" class="block py-2 text-gray-700 hover:text-indigo-600">Suporte</a>
-                <a href="privacy.html" class="block py-2 text-indigo-600 font-semibold">Privacidade</a>
-                <a href="terms.html" class="block py-2 text-gray-700 hover:text-indigo-600">Termos</a>
-                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-indigo-600">Diretrizes</a>
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Início</a>
+                <a href="support.html" class="block py-2 text-gray-700 hover:text-primary">Suporte</a>
+                <a href="privacy.html" class="block py-2 text-primary font-semibold">Privacidade</a>
+                <a href="terms.html" class="block py-2 text-gray-700 hover:text-primary">Termos</a>
+                <a href="community-guidelines.html" class="block py-2 text-gray-700 hover:text-primary">Diretrizes</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <div class="max-w-4xl mx-auto px-4 py-12">
-        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Política de Privacidade</h1>
-            <p class="text-gray-600 mb-8">Última atualização: 16 de dezembro de 2025</p>
+        <div class="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 border border-gray-100">
+            <!-- Hero Icon -->
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-soft">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Política de Privacidade</h1>
+                <p class="text-gray-600">Última atualização: 16 de dezembro de 2025</p>
+            </div>
 
             <div class="prose max-w-none">
                 <!-- Introduction -->
@@ -131,7 +164,7 @@
                         <li><strong>Exclusão de Conta:</strong> Quando você exclui sua conta, removemos permanentemente seus dados pessoais dentro de 30 dias, exceto quando exigido por lei</li>
                         <li><strong>Dados Retidos Após Exclusão:</strong> Algumas informações podem ser retidas anonimizadas para fins de prevenção de fraude, conformidade legal ou segurança (ex: registros de moderação de conteúdo reportado)</li>
                     </ul>
-                    <p class="text-gray-700">Para mais detalhes sobre exclusão de conta, visite nossa <a href="account-deletion.html" class="text-indigo-600 hover:underline font-medium">página de exclusão de conta</a>.</p>
+                    <p class="text-gray-700">Para mais detalhes sobre exclusão de conta, visite nossa <a href="account-deletion.html" class="text-primary hover:underline font-medium">página de exclusão de conta</a>.</p>
                 </section>
 
                 <!-- Section 5: Children's Privacy -->
@@ -156,7 +189,7 @@
                         <li><strong>Portabilidade:</strong> Solicitar uma cópia de seus dados em formato legível por máquina</li>
                         <li><strong>Objeção:</strong> Opor-se ao processamento de certos dados (ex: marketing direto)</li>
                     </ul>
-                    <p class="text-gray-700">Para exercer esses direitos, entre em contato conosco através de <a href="mailto:support@aupairgrupao.com" class="text-indigo-600 hover:underline font-medium">support@aupairgrupao.com</a>.</p>
+                    <p class="text-gray-700">Para exercer esses direitos, entre em contato conosco através de <a href="mailto:support@aupairgrupao.com" class="text-primary hover:underline font-medium">support@aupairgrupao.com</a>.</p>
                 </section>
 
                 <!-- Section 7: Advertising -->
@@ -216,10 +249,10 @@
                     <p class="text-gray-700 mb-3">
                         Se você tiver dúvidas, preocupações ou solicitações relacionadas a esta Política de Privacidade ou ao tratamento de seus dados pessoais, entre em contato conosco:
                     </p>
-                    <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4 rounded-r-lg">
+                    <div class="bg-primary/10 border-l-4 border-primary p-4 rounded-2xl">
                         <p class="text-gray-800 font-semibold">AuPair Grupão - Privacidade</p>
-                        <p class="text-gray-700">Email: <a href="mailto:support@aupairgrupao.com" class="text-indigo-600 hover:underline font-medium">support@aupairgrupao.com</a></p>
-                        <p class="text-gray-700">Página de Suporte: <a href="support.html" class="text-indigo-600 hover:underline font-medium">aupairgrupao.com/support</a></p>
+                        <p class="text-gray-700">Email: <a href="mailto:support@aupairgrupao.com" class="text-primary hover:underline font-medium">support@aupairgrupao.com</a></p>
+                        <p class="text-gray-700">Página de Suporte: <a href="support.html" class="text-primary hover:underline font-medium">aupairgrupao.com/support</a></p>
                     </div>
                 </section>
 
@@ -227,13 +260,13 @@
                 <div class="border-t border-gray-200 pt-6 mt-8">
                     <h3 class="font-semibold text-gray-800 mb-3">Links Relacionados</h3>
                     <div class="flex flex-wrap gap-3">
-                        <a href="terms.html" class="text-indigo-600 hover:underline">Termos de Uso</a>
+                        <a href="terms.html" class="text-primary hover:underline">Termos de Uso</a>
                         <span class="text-gray-400">•</span>
-                        <a href="community-guidelines.html" class="text-indigo-600 hover:underline">Diretrizes da Comunidade</a>
+                        <a href="community-guidelines.html" class="text-primary hover:underline">Diretrizes da Comunidade</a>
                         <span class="text-gray-400">•</span>
-                        <a href="account-deletion.html" class="text-indigo-600 hover:underline">Exclusão de Conta</a>
+                        <a href="account-deletion.html" class="text-primary hover:underline">Exclusão de Conta</a>
                         <span class="text-gray-400">•</span>
-                        <a href="support.html" class="text-indigo-600 hover:underline">Suporte</a>
+                        <a href="support.html" class="text-primary hover:underline">Suporte</a>
                     </div>
                 </div>
             </div>
@@ -241,16 +274,16 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-white mt-16">
+    <footer class="bg-white mt-16 border-t border-gray-100">
         <div class="max-w-6xl mx-auto px-4 py-8">
             <div class="text-center text-gray-600">
                 <p class="mb-2">&copy; 2025 AuPair Grupão. Todos os direitos reservados.</p>
                 <div class="flex justify-center space-x-4 text-sm">
-                    <a href="privacy.html" class="hover:text-indigo-600">Privacidade</a>
+                    <a href="privacy.html" class="hover:text-primary transition">Privacidade</a>
                     <span>•</span>
-                    <a href="terms.html" class="hover:text-indigo-600">Termos</a>
+                    <a href="terms.html" class="hover:text-primary transition">Termos</a>
                     <span>•</span>
-                    <a href="support.html" class="hover:text-indigo-600">Suporte</a>
+                    <a href="support.html" class="hover:text-primary transition">Suporte</a>
                 </div>
             </div>
         </div>
