@@ -321,7 +321,8 @@
             const phoneNumber = formData.get('whatsapp');
             const whatsapp = countryCode + ' ' + phoneNumber;
 
-            const qualified = checkQualification(status, device, timeAsAupair);
+            // Apenas Android desqualifica; demais combinacoes deixam entrar
+            const qualified = device !== 'android';
 
             // Show loading
             formSection.classList.add('hidden');
